@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-
-import './index.css';
+import './styles.css';
 class List extends Component {
 
     constructor(props) {
@@ -25,7 +24,6 @@ class List extends Component {
         // 13 - enter, 38 - up, 40 - down
         const { currencies } = this.state;
         const maxItems = currencies.length - 1;
-
 
         console.log('event keycode', event.keyCode)
 
@@ -73,11 +71,11 @@ class List extends Component {
 
         return (
             <div
-                className="List"
+                className="list"
                 onKeyDown={this.handleListKeyPress}
                 tabIndex="0"
             >
-                <ul>
+                <ul className="list__menu">
                     {listCurrency}
                 </ul>
             </div>

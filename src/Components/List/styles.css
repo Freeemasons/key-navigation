@@ -1,0 +1,20 @@
+/* .list {
+    height: 200px;
+    width: 100%;
+} */
+
+.list__item.active {
+    background-color: blue;
+}
+
+.list__menu {
+    list-style-type: none;
+}
+
+.list__item {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
